@@ -6,10 +6,5 @@
     ],
     "routes": [
         { "src": "/(.*)", "dest": "/index.js" }
-    ],
-    "git": {
-        "deploymentEnabled": {
-            "master": false
-        }
-    }
+    ]
 }
