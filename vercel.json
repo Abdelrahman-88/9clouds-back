@@ -9,7 +9,7 @@
     ],
     "git": {
         "deploymentEnabled": {
-            "master": true
+            "master": false
         }
     }
 }
