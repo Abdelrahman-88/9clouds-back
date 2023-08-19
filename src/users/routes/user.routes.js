@@ -24,6 +24,7 @@ const {
     LOG_OUT
 } = require("../endPoint");
 
+const { googleLogin } = require("../controler/googleLogin");
 
 router.post("/register", validation(registerSchema), register);
 
@@ -45,7 +46,7 @@ router.patch("/changePassword/:id", validation(changePasswordSchema), isAuthoriz
 
 router.patch("/logOut/:id", validation(logOutSchema), isAuthorized(LOG_OUT), logOut);
 
-
+router.post("/googleLogin", googleLogin);
 
 
 
